@@ -41,16 +41,13 @@ function contact() {
       Feel free to reach out for collaborations or just a friendly hello
     </p>
     <div className="flex gap-8">
-  <a href="#" className="text-gray-400 hover:text-emerald-700 dark:hover:text-cyan-300 transition duration-300 transform hover:scale-110">
+  <a href="https://github.com/BirukW-23" className="text-gray-400 hover:text-emerald-700 dark:hover:text-cyan-300 transition duration-300 transform hover:scale-110">
     <Github />
   </a>
-  <a href="#" className="text-gray-400 hover:text-emerald-700 dark:hover:text-cyan-300 transition duration-300 transform hover:scale-110">
+  <a href="https://www.linkedin.com/in/biruk-wondmeneh-634090235/" className="text-gray-400 hover:text-emerald-700 dark:hover:text-cyan-300 transition duration-300 transform hover:scale-110">
     <Linkedin />
   </a>
-  <a href="#" className="text-gray-400 hover:text-emerald-700 dark:hover:text-cyan-300 transition duration-300 transform hover:scale-110">
-    <Facebook />
-  </a>
-  <a href="#" className="text-gray-400 hover:text-emerald-700 dark:hover:text-cyan-300 transition duration-300 transform hover:scale-110">
+  <a href="https://www.instagram.com/biruk2337?igsh=YnlnN3Y3YnpueWw3" className="text-gray-400 hover:text-emerald-700 dark:hover:text-cyan-300 transition duration-300 transform hover:scale-110">
     <Instagram />
   </a>
 </div>

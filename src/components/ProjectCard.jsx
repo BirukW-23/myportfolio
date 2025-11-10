@@ -5,6 +5,7 @@ import image3 from "../assets/pro1.png";
 import image4 from "../assets/pro2.png";
 import image5 from "../assets/crafted.png/"
 import image6 from "../assets/gilbertin.png/"
+import image7 from "../assets/project2.png"
 function ProjectCard() {
   const projects = [
     {
@@ -87,7 +88,21 @@ function ProjectCard() {
         language2: "Tailwindcss",
         language3: "shadcn",
       },
-    }
+    },
+
+{
+  id: 2,
+  image: image7,
+  title: "Yab Chemicals Website",
+  demoLink: "https://www.yabchemicals.com/", 
+  description:
+    "A professional website for Yab Chemicals, a chemical manufacturing company. The site showcases company products, services, and industry expertise. It includes interactive sections for product details, contact forms, and company information, built for an engaging user experience.",
+  language: {
+    language1: "React",
+    language2: "TypeScript",
+    language3: "TailwindCSS",
+  },
+},
   ];
   return (
     <div className="grid gap-7 p-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
