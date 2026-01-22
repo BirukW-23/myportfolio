@@ -3,9 +3,10 @@ import image1 from "../assets/pro3.png";
 import image2 from "../assets/project1.png";
 import image3 from "../assets/pro1.png";
 import image4 from "../assets/pro2.png";
-import image5 from "../assets/crafted.png/"
-import image6 from "../assets/gilbertin.png/"
-import image7 from "../assets/project2.png"
+import image5 from "../assets/crafted.png/";
+import image6 from "../assets/gilbertin.png/";
+import image7 from "../assets/project2.png";
+import image8 from "../assets/project7.png";
 function ProjectCard() {
   const projects = [
     {
@@ -73,7 +74,7 @@ function ProjectCard() {
         language2: "Tailwindcss",
         language3: "Node.js",
         language4: "Express.js",
-        language5: "MongoDb"
+        language5: "MongoDb",
       },
     },
     {
@@ -90,19 +91,35 @@ function ProjectCard() {
       },
     },
 
-{
-  id: 2,
-  image: image7,
-  title: "Yab Chemicals Website",
-  demoLink: "https://www.yabchemicals.com/", 
-  description:
-    "A professional website for Yab Chemicals, a chemical manufacturing company. The site showcases company products, services, and industry expertise. It includes interactive sections for product details, contact forms, and company information, built for an engaging user experience.",
-  language: {
-    language1: "React",
-    language2: "TypeScript",
-    language3: "TailwindCSS",
-  },
-},
+    {
+      id: 7,
+      image: image7,
+      title: "Yab Chemicals Website",
+      demoLink: "https://www.yabchemicals.com/",
+      description:
+        "A professional website for Yab Chemicals, a chemical manufacturing company. The site showcases company products, services, and industry expertise. It includes interactive sections for product details, contact forms, and company information, built for an engaging user experience.",
+      language: {
+        language1: "React",
+        language2: "TypeScript",
+        language3: "TailwindCSS",
+      },
+    },
+    {
+      id: 8,
+      image: image8,
+      title: "Rent Agreement Management System",
+      demoLink: "https://aahrams.onrender.com/",
+      description:
+        "A Rent Agreement Management System is a fully digital and end-to-end platform designed to manage rental agreements efficiently and securely. The system allows landlords, tenants, and administrators to create, review, approve, and manage rental agreements online.",
+      language: {
+        language1: "React.js",
+        language2: "Tailwind CSS",
+        language3: "Node.js",
+        language4: "Express.js",
+        language5: "Prisma",
+        language6: "PostgreSQL",
+      },
+    },
   ];
   return (
     <div className="grid gap-7 p-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
