@@ -6,26 +6,18 @@ const Testimonials = () => {
     const testimonials = [
         {
             id: 1,
-            name: "Sarah Johnson",
-            role: "CEO at TechStart",
+            name: "Ermiyas Solomon",
+            role: "Senior Software Engineer",
             content:
-                "Biruk is an exceptional developer who transformed our vision into reality. His attention to detail and technical expertise are unmatched.",
+                "Biruk is a dedicated and talented software developer with strong skills in React and modern frontend technologies. He approaches challenges with a problem-solving mindset and consistently delivers clean, well-structured solutions. He’s reliable, eager to learn, and a pleasure to work with.",
             rating: 5,
         },
         {
             id: 2,
-            name: "David Chen",
-            role: "Creative Director",
+            name: "Tsegaye",
+            role: "Senior Developer",
             content:
-                "Working with Biruk on our photography portfolio was a breeze. He understands both the artistic and technical sides of web development.",
-            rating: 5,
-        },
-        {
-            id: 3,
-            name: "Emily Davis",
-            role: "Marketing Manager",
-            content:
-                "The website redesign significantly increased our user engagement. Biruk's modern design approach is exactly what we needed.",
+                "I had the opportunity to work with Biruk Wondmeneh and observe his approach to software development. He demonstrates a strong understanding of core software engineering principles, writes clean and maintainable code, and approaches problems with a logical and structured mindset. Biruk is highly motivated, adapts quickly to new technologies, and takes ownership of his responsibilities",
             rating: 5,
         },
     ];
@@ -40,7 +32,7 @@ const Testimonials = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-gray-900 dark:text-white">
+                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 dark:text-white">
                         Client <span className="text-cyan-600 dark:text-cyan-400">Testimonials</span>
                     </h2>
                     <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
