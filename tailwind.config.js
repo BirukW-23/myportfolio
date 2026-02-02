@@ -8,7 +8,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"], // Primary font
+        sans: ["Outfit", "sans-serif"], // Primary font updated to Outfit
+        inter: ["Inter", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
         raleway: ["Raleway", "sans-serif"],

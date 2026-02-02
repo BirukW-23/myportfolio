@@ -1,75 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html {
-  scroll-behavior: smooth;
-}
-body {
-  font-family:system-ui;
-  background-color: #ffffff;
-  background-image: 
-    linear-gradient(#f3ecec 1px, transparent 1px),
-    linear-gradient(90deg, #f3ecec 1px, transparent 1px);
-  background-size: 60px 60px;
-  background-position: center;
+
+@layer utilities {
+  .bg-custom-grid {
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(to right, rgba(220, 38, 38, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(220, 38, 38, 0.08) 1px, transparent 1px);
+  }
+
+  .dark .bg-custom-grid {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  }
 }
 
-:root.dark body{
-  font-family:system-ui;
-  background:#070f1a;
-  background-image: 
-    linear-gradient(#08111e 1px, transparent 1px),
-    linear-gradient(90deg, #08111e 1px, transparent 1px);
-  background-size: 60px 60px;
-  background-position: center;
- }
-.dark.body {
-  font-family:system-ui;
-  background-color: #000000;
-  background-image: 
-    linear-gradient(#f8f6f6 1px, transparent 1px),
-    linear-gradient(90deg, #fafafa 1px, transparent 1px);
-  background-size: 60px 60px;
-  background-position: center;
+html {
+  scroll-behavior: smooth;
+  font-family: 'Outfit', sans-serif;
 }
+
+body {
+  @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300;
+}
+
 :root {
-    /* Cyan */
-    --cyan-50: #ecfeff;
-    --cyan-100: #cffafe;
-    --cyan-200: #a5f3fc;
-    --cyan-300: #67e8f9;
-    --cyan-400: #22d3ee;
-    --cyan-500: #06b6d4;
-    --cyan-600: #0891b2;
-    --cyan-700: #0e7490;
-    --cyan-800: #155e75;
-    --cyan-900: #164e63;
-    --cyan-950: #083344;
-  
-    /* Teal */
-    --teal-50: #f0fdfa;
-    --teal-100: #ccfbf1;
-    --teal-200: #99f6e4;
-    --teal-300: #5eead4;
-    --teal-400: #2dd4bf;
-    --teal-500: #14b8a6;
-    --teal-600: #0d9488;
-    --teal-700: #0f766e;
-    --teal-800: #115e59;
-    --teal-900: #134e4a;
-    --teal-950: #042f2e;
-  
-    /* Emerald */
-    --emerald-50: #ecfdf5;
-    --emerald-100: #d1fae5;
-    --emerald-200: #a7f3d0;
-    --emerald-300: #6ee7b7;
-    --emerald-400: #34d399;
-    --emerald-500: #10b981;
-    --emerald-600: #059669;
-    --emerald-700: #047857;
-    --emerald-800: #065f46;
-    --emerald-900: #064e3b;
-    --emerald-950: #022c22;
-  }
-  
+  /* Cyan */
+  --cyan-50: #ecfeff;
+  --cyan-100: #cffafe;
+  --cyan-200: #a5f3fc;
+  --cyan-300: #67e8f9;
+  --cyan-400: #22d3ee;
+  --cyan-500: #06b6d4;
+  --cyan-600: #0891b2;
+  --cyan-700: #0e7490;
+  --cyan-800: #155e75;
+  --cyan-900: #164e63;
+  --cyan-950: #083344;
+
+  /* Teal */
+  --teal-50: #f0fdfa;
+  --teal-100: #ccfbf1;
+  --teal-200: #99f6e4;
+  --teal-300: #5eead4;
+  --teal-400: #2dd4bf;
+  --teal-500: #14b8a6;
+  --teal-600: #0d9488;
+  --teal-700: #0f766e;
+  --teal-800: #115e59;
+  --teal-900: #134e4a;
+  --teal-950: #042f2e;
+
+  /* Emerald */
+  --emerald-50: #ecfdf5;
+  --emerald-100: #d1fae5;
+  --emerald-200: #a7f3d0;
+  --emerald-300: #6ee7b7;
+  --emerald-400: #34d399;
+  --emerald-500: #10b981;
+  --emerald-600: #059669;
+  --emerald-700: #047857;
+  --emerald-800: #065f46;
+  --emerald-900: #064e3b;
+  --emerald-950: #022c22;
+}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function SkillCard() {
   const [activeTab, setActiveTab] = useState("frontend");
-  
+
   const categories = {
     frontend: [
       {
@@ -90,9 +90,7 @@ function SkillCard() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       <div className="flex flex-col items-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 dark:text-white">
-          My <span className="text-cyan-500">Skills</span>
-        </h2>
+
         <p className="text-gray-600 dark:text-gray-300 text-center max-w-lg">
           Technologies and tools I use to create amazing digital experiences
         </p>
@@ -105,11 +103,10 @@ function SkillCard() {
             <button
               key={category}
               onClick={() => setActiveTab(category)}
-              className={`px-6 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
-                activeTab === category
+              className={`px-6 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${activeTab === category
                   ? "bg-white dark:bg-slate-700 shadow-sm text-cyan-600 dark:text-cyan-400"
                   : "text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-700"
-              }`}
+                }`}
             >
               {category.charAt(0).toUpperCase() + category.slice(1)}
             </button>
@@ -125,9 +122,9 @@ function SkillCard() {
             className="group relative bg-white dark:bg-slate-800 rounded-xl p-6 flex flex-col items-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-gray-100 dark:border-slate-700"
           >
             <div className="w-14 h-14 flex items-center justify-center mb-4">
-              <img 
-                src={skill.icon} 
-                alt={skill.name} 
+              <img
+                src={skill.icon}
+                alt={skill.name}
                 className="w-full h-full object-contain"
                 loading="lazy"
               />
