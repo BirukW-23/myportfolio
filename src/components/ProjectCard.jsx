@@ -7,6 +7,7 @@ import image5 from "../assets/crafted.png/";
 import image6 from "../assets/gilbertin.png/";
 import image7 from "../assets/project2.png";
 import image8 from "../assets/project7.png";
+import image9 from "../assets/project8.png";
 function ProjectCard() {
   const projects = [
     {
@@ -118,6 +119,21 @@ function ProjectCard() {
         language4: "Express.js",
         language5: "Prisma",
         language6: "PostgreSQL",
+      },
+    },
+    {
+      id: 9,
+      image: image9,
+      title: "Rent Management System",
+      demoLink: "https://act.com.et/",
+      description:
+        "Architected and developed a comprehensive rent management system for Atlas Computer Technology. System handles property listings, tenant management, payment processing, maintenance requests, and reporting. Served as lead senior developer overseeing frontend architecture and team coordination.",
+      language: {
+        language1: "Next.js",
+        language2: "Tailwind CSS",
+        language3: "Java",
+        language4: "Spring boot",
+        language5: "PostgreSQL",
       },
     },
   ];
