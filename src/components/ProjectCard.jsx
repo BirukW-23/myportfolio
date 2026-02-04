@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
@@ -118,7 +119,7 @@ function ProjectCard() {
             }`}
         >
           {/* Image Section */}
-          <div className="w-full lg:w-3/5 group relative overflow-hidden rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 h-[250px] md:h-[350px]">
+          <div className="w-full lg:w-3/5 group relative overflow-hidden rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 h-[250px] md:h-[450px]">
             <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all duration-500 z-10"></div>
             <img
               src={project.image}

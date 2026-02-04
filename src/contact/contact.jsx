@@ -1,6 +1,7 @@
 import React from 'react';
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import { Linkedin, Github, Instagram } from 'lucide-react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 function Contact() {
@@ -14,13 +15,6 @@ function Contact() {
     },
     {
       id: 2,
-      icon: <PhoneIcon className="w-6 h-6 text-white" />,
-      title: 'Phone',
-      description: '+251 948 822 471',
-      color: 'bg-cyan-500'
-    },
-    {
-      id: 3,
       icon: <MapPinIcon className="w-6 h-6 text-white" />,
       title: 'Location',
       description: 'Addis Ababa, Ethiopia',
@@ -38,7 +32,7 @@ function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-gray-900 dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 dark:text-white">
             Get In <span className="text-cyan-600 dark:text-cyan-400">Touch</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
