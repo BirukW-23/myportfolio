@@ -36,6 +36,22 @@ function ProjectCard() {
     },
     {
       id: 3,
+      image: image1,
+      title: "Clinical Management System",
+      demoLink: "https://your-demo-link.com/",
+      description:
+        "A Clinical Management System is a digital platform designed to help clinics manage patients, appointments, medical records, and billing efficiently. The system allows doctors, receptionists, and administrators to track patient information, schedule visits, manage prescriptions, and improve overall healthcare service delivery.",
+      language: [
+        "React.js",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+      ],
+      color: "bg-blue-500",
+    },
+    {
+      id: 4,
       image: image5,
       title: "Crafted-BY-Her",
       demoLink: "https://crafted-by-her.onrender.com/",
@@ -45,7 +61,7 @@ function ProjectCard() {
       color: "bg-pink-500",
     },
     {
-      id: 4,
+      id: 5,
       image: image6,
       title: "Gilbertin Website",
       demoLink: "https://kansainvalinentyo.com/",
@@ -55,7 +71,7 @@ function ProjectCard() {
       color: "bg-blue-500",
     },
     {
-      id: 5,
+      id: 6,
       image: image7,
       title: "Yab Chemicals Website",
       demoLink: "https://www.yabchemicals.com/",
@@ -65,7 +81,7 @@ function ProjectCard() {
       color: "bg-indigo-500",
     },
     {
-      id: 6,
+      id: 7,
       image: image4,
       title: "Agricultural support",
       demoLink: "ethio-gym.netlify.app",
@@ -75,7 +91,7 @@ function ProjectCard() {
       color: "bg-orange-500",
     },
     {
-      id: 7,
+      id: 8,
       image: image3,
       title: "Job Border Website",
       demoLink: "ethio-gym.netlify.app",
@@ -85,7 +101,7 @@ function ProjectCard() {
       color: "bg-rose-500",
     },
     {
-      id: 8,
+      id: 9,
       image: image2,
       title: "Ethiopian Fitness Gym",
       demoLink: "https://ethio-gym.netlify.app/",
