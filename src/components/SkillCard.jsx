@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 function SkillCard() {
   const [activeTab, setActiveTab] = useState("frontend");
 

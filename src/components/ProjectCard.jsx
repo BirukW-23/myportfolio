@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import image1 from "../assets/pro3.png";
 import image2 from "../assets/project1.png";
-import image3 from "../assets/pro1.png";
+import image3 from "../assets/pharma.png";
 import image4 from "../assets/pro2.png";
 import image5 from "../assets/crafted.png/";
 import image6 from "../assets/gilbertin.png/";
@@ -21,7 +21,14 @@ function ProjectCard() {
       demoLink: "https://aahrams.onrender.com/",
       description:
         "A Rent Agreement Management System is a fully digital and end-to-end platform designed to manage rental agreements efficiently and securely. The system allows landlords, tenants, and administrators to manage agreements.",
-      language: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "Prisma"],
+      language: [
+        "React.js",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Prisma",
+      ],
       color: "bg-purple-500",
     },
     {
@@ -31,7 +38,13 @@ function ProjectCard() {
       demoLink: "https://act.com.et/",
       description:
         "Architected and developed a comprehensive rent management system for Atlas Computer Technology. System handles property listings, tenant management, payment processing, maintenance requests, and reporting.",
-      language: ["Next.js", "Tailwind CSS", "Java", "Spring boot", "PostgreSQL"],
+      language: [
+        "Next.js",
+        "Tailwind CSS",
+        "Java",
+        "Spring boot",
+        "PostgreSQL",
+      ],
       color: "bg-teal-500",
     },
     {
@@ -93,12 +106,12 @@ function ProjectCard() {
     {
       id: 8,
       image: image3,
-      title: "Job Border Website",
-      demoLink: "ethio-gym.netlify.app",
+      title: "Pharmacy Inventory Management System",
+      demoLink: "https://your-pharmacy-demo.vercel.app/",
       description:
-        "A job board website is an online platform that connects job seekers with employers by listing job openings across various industries. It serves as a digital marketplace where employers can post job opportunities.",
-      language: ["React", "Tailwind", "Express", "PostgreSQL"],
-      color: "bg-rose-500",
+        "A comprehensive web application designed for pharmacies to manage drug inventories, track expiration dates, and monitor stock levels. Features a secure Node.js and Prisma backend coupled with a responsive UI to streamline daily pharmaceutical workflows and analytics.",
+      language: ["Next.js", "React", "Node.js", "Prisma", "TailwindCSS"],
+      color: "bg-emerald-500",
     },
     {
       id: 9,
@@ -121,8 +134,9 @@ function ProjectCard() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className={`flex flex-col lg:flex-row gap-8 lg:gap-12 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
-            }`}
+          className={`flex flex-col lg:flex-row gap-8 lg:gap-12 items-center ${
+            index % 2 === 1 ? "lg:flex-row-reverse" : ""
+          }`}
         >
           {/* Image Section */}
           <div className="w-full lg:w-3/5 group relative overflow-hidden rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 h-[250px] md:h-[450px]">
@@ -135,25 +149,31 @@ function ProjectCard() {
           </div>
 
           {/* Content Section */}
-          <div className={`w-full lg:w-2/5 flex flex-col gap-5 items-start text-left ${index % 2 === 1 ? "lg:items-start lg:text-left" : "lg:items-end lg:text-right"
-            }`}>
+          <div
+            className={`w-full lg:w-2/5 flex flex-col gap-5 items-start text-left ${
+              index % 2 === 1
+                ? "lg:items-start lg:text-left"
+                : "lg:items-end lg:text-right"
+            }`}
+          >
             {/* Title */}
             <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-cyan-600 to-emerald-600 bg-clip-text text-transparent dark:text-white">
               {project.title}
             </h3>
 
             {/* Description Card */}
-            <div
-              className="p-5 rounded-lg shadow-md relative z-20 w-full bg-[#0b1625] dark:bg-slate-800 text-gray-300 dark:text-gray-300 text-left border border-gray-800 min-h-[140px] flex flex-col justify-center"
-            >
+            <div className="p-5 rounded-lg shadow-md relative z-20 w-full bg-[#0b1625] dark:bg-slate-800 text-gray-300 dark:text-gray-300 text-left border border-gray-800 min-h-[140px] flex flex-col justify-center">
               <p className="text-sm md:text-base leading-relaxed font-light opacity-95">
                 {project.description}
               </p>
             </div>
 
             {/* Technologies */}
-            <div className={`flex flex-wrap gap-3 justify-start ${index % 2 === 1 ? "" : "lg:justify-end"
-              } w-full`}>
+            <div
+              className={`flex flex-wrap gap-3 justify-start ${
+                index % 2 === 1 ? "" : "lg:justify-end"
+              } w-full`}
+            >
               {project.language.map((lang, idx) => (
                 <span
                   key={idx}
